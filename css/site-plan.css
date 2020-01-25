@@ -12,7 +12,7 @@ html {
   background-color: var(--primary-color);
 }
 body {
-  max-width: 900px;
+  max-width: 900px; fd
   margin: 0 auto;
   background-color: white;
   padding: 1em;
@@ -26,7 +26,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Bangers', cursive;
+  font-family:'Luckiest Guy', cursive; 
   color: ;
 }
 header {
@@ -39,7 +39,7 @@ header > h1 {
   color: ;
 }
 p {
-  font-family: 'Luckiest Guy', cursive;
+  font-family:'Bangers', cursive; 
   color: ;
   padding: 1em;
 }

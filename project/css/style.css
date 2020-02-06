@@ -29,3 +29,7 @@ social {
 p {
     background-color: blue;
 }
+
+.social img{
+    width: 25px;height:25px;
+}

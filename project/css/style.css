@@ -1,7 +1,8 @@
 body {
   background-color: lightblue;
-  font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
 }
 
 header,
@@ -12,13 +13,61 @@ footer {
   margin: 0 auto;
 }
 
-header {
-  background-color: black;
-  font-size: 16px;
-  display: flex;
+nav {
+  background-color: blue;
   align-items: center;
 }
 
+nav ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+
+header {
+  background-color: black;
+  font-size: 16px;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  width: 125px;
+  height: auto;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading h1 {
+  font-size: 2rem;
+  color: whitesmoke;
+  margin: 0;
+}
+
+.motto {
+  font-style: italic;
+  color: forestgreen;
+  font-size: 1rem;
+  letter-spacing: 1.5pt;
+}
 header img {
   width: 100px;
   height: auto;
@@ -28,9 +77,7 @@ header h1 {
   margin-left: 30px;
   color: #fff;
 }
-.social {
-  float: right;
-}
+
 main p {
   background-color: blue;
   color: white;
@@ -40,7 +87,9 @@ footer {
   background-color: #000;
   color: #fff;
 }
-
+.social {
+  float: right;
+}
 .social img {
   width: 25px;
   height: auto;

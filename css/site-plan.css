@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
-@import url('https://fonts.googleapis.com/css?family=Bangers|Luckiest+Guy&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Bangers|Luckiest+Guy&display=swap");
 :root {
-  --primary-color: #192BC2;
-  --secondary-color: #0E0E52;
-  --accent1-color: #78C0E0;
-  --accent2-color: #449DD1;
+  --primary-color: #192bc2;
+  --secondary-color: #0e0e52;
+  --accent1-color: #78c0e0;
+  --accent2-color: #449dd1;
   --heading-font: "IM Fell French Canon SC";
   --paragraph-font: Lato, Helvetica, sans-serif;
 }
@@ -12,8 +12,8 @@ html {
   background-color: var(--primary-color);
 }
 body {
-  max-width: 900px; fd
-  margin: 0 auto;
+  max-width: 900px;
+  fdmargin: 0 auto;
   background-color: white;
   padding: 1em;
 }
@@ -26,7 +26,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family:'Luckiest Guy', cursive; 
+  font-family: "Luckiest Guy", cursive;
   color: ;
 }
 header {
@@ -39,7 +39,7 @@ header > h1 {
   color: ;
 }
 p {
-  font-family:'Bangers', cursive; 
+  font-family: "Bangers", cursive;
   color: ;
   padding: 1em;
 }

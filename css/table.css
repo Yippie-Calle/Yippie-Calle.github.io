@@ -1,0 +1,36 @@
+.Header {
+    text-align: center;
+}
+body {
+    display: block;
+    margin: 8px;
+}
+.Head {
+    background-color: black;
+    color:yellow;
+    padding: 10px;
+}
+.columnHead {
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding: 10px;
+}
+.columnBody {
+    text-align: left;
+    padding:10px;
+}
+tr:hover {
+    background-color: grey;
+}
+td, th {
+    border: .05px solid black;
+}
+table {
+    box-shadow: 5px 5px 5px #999;
+    border: .1px solid white;
+    margin: 30px auto;
+}
+footer {
+    text-align: center;
+}

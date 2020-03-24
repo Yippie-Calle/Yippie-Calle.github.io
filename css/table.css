@@ -27,7 +27,7 @@ td, th {
     border: .05px solid black;
 }
 table {
-    box-shadow: 5px 5px 5px #999;
+    box-shadow: 5px 5px 10px  #999;
     border: .1px solid white;
     margin: 30px auto;
 }

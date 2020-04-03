@@ -1,0 +1,181 @@
+header,
+nav,
+main,
+footer {
+  max-width: 100%;
+  margin: 0 auto;
+}
+header {
+  background-color: black;
+  font-size: 16px;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+header img {
+  background-color: white;
+  width: 150px;
+  height: auto;
+  border-radius: 40%;
+  border: 2px solid #a80000;
+  margin: 10px;
+}
+header h1 {
+  color: #a80000;
+  text-align: center;
+  font-family: Oxaxium;
+  font-variant: small-caps;
+}
+header h2 {
+  color: #686868;
+  font-family: Oxaxium;
+}
+
+.Membership {
+  display: flex;
+  flex-direction: column;
+  justify-items: right;
+}
+.signup {
+  background-color: black;
+  color: white;
+  padding: 5px 5px;
+  margin-bottom: 15px;
+  border: 2px solid white;
+}
+.login {
+  background-color: black;
+  color: white;
+  padding: 5px 5px;
+  margin-bottom: 15px;
+  border: 2px solid white;
+}
+a.iLinks:hover {
+  color: red;
+}
+nav {
+  background-color: black;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+  align-items: center;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 2rem;
+  align-items: center;
+}
+
+main img {
+  max-width: 100%;
+  max-height: auto;
+}
+.Question {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.Question img {
+  grid-column: 1/4;
+  grid-row: 1/4;
+}
+.Question h2 {
+  grid-column: 1/4;
+  grid-row: 2;
+  padding: 20px;
+  text-align: center;
+  font-family: Titillum Web;
+  font-style: oblique;
+  font-variant: small-caps;
+  font-size: 2.6rem;
+  line-height: 200%;
+  font-weight: bold;
+  color: whitesmoke;
+  background-color: rgba(128, 128, 128, 0.3);
+  align-items: center;
+  justify-items: center;
+  margin: 100px auto;
+}
+.Answer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.Answer img {
+  grid-column: 1/5;
+  grid-row: 1/5;
+}
+.Answer p {
+  grid-column: 3/5;
+  grid-row: 1/3;
+  font-family: Titillum Web;
+  font-size: 2rem;
+  color: black;
+  text-align: left;
+  margin: 100px 100px;
+  background-color: rgba(255, 0, 0, 0.5);
+  border-radius: 25px;
+  padding: 20px;
+}
+.Options {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.Options img {
+  grid-column: 1/4;
+  grid-row: 1/4;
+}
+.Options p {
+    color: white;
+}
+.Profile {
+  width: 320px;
+  border: 2px solid white;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  grid-column: 1;
+  grid-row: 2/3;
+}
+.Profile img {
+  max-width: 100%;
+}
+.Reviews {
+  width: 320px;
+  border: 2px solid white;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  grid-column: 2;
+  grid-row: 2/3;
+}
+.Reviews img {
+  max-width: 100%;
+}
+.Purchase {
+  width: 320px;
+  border-radius: 4px;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  grid-column: 3;
+  grid-row: 2/3;
+}
+.Purchase img {
+  max-width: 100%;
+}

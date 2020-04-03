@@ -7,9 +7,10 @@
     <meta name="author" content="Bryan Calle" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Auto4Me</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
+    <header id="Header">
       <picture>
         <img class="Logo" src="images/logo.jpg" alt="Auto4Me logo" />
       </picture>
@@ -17,62 +18,91 @@
         <h1>Auto4Me.com</h1>
       </div>
       <div class="Motto" id="Motto">
-        <p>Together we can find your next car.</p>
+        <h2>Together we can find your next car.</h2>
       </div>
       <div class="Membership" id="Remember Me">
-        <p>Log-in | Sign-up</p>
+        <button class="signup">Sign-Up</button>
+        <button class="login">Log-in</button>
       </div>
     </header>
-    <nav>
+    <nav class="iLinks">
       <ul>
         <li>
-          <a href="">About me</a>
+          <a href="#">About me</a>
         </li>
         <li>
-          <a href="">Reviews</a>
+          <a href="#">Reviews</a>
         </li>
         <li>
-          <a href="">Buy a Car</a>
+          <a href="#">Buy a Car</a>
         </li>
       </ul>
     </nav>
     <main>
+      <div class="Question">
+        <img src="images/traffic.jpg" alt="parking Lot" class="Traffic" />
+        <h2>
+          It's time to purchase
+          <span style="font-size: larger; text-decoration: underline;"
+            >a new car!</span
+          >
+          <br />
+          Out of all the cars in the world. Which one is right for<span
+            style="font-size: 5rem; text-decoration: underline;"
+          >
+            you?</span
+          >
+        </h2>
+      </div>
+      <div class="Answer">
+        <img src="images/man_searching.jpg" alt="parking Lot" />
+        <p>
+          Here at <span style="font-weight:bold;">Auto4Me</span> we understand
+          finding a car is difficult. We are here to do all the work for you!
+          All we need is a little bit of information about you. Create a profile
+          and fill out our About Me form. Once you submit the form our trained
+          profesionals will analyze your results and give you what we believe is
+          the car for you. Don't worry, if you don't want to look at the cars we
+          reccommended we wont get reccommended. You are free to read our
+          articles and research for yourself. After all, this is your future
+          car.
+        </p>
+      </div>
+      <div class="Options">
+        <img src="images/intersection.jpg" alt="intersection"> 
         <article class="Profile">
-            <img src="https://picsum.photos/320/240" alt="Random Image" />
-            <p>
-              This is a wider card with supporting text below as a natural lead-in to
-              additional conent. This conent is a little bit longer.
-            </p>
-            <footer>
-              <button class="viewButton">View</button>
-              <button class="editButton">Edit</button>
-              <span class="span"> 9 min </span>
-            </footer>
-          </article>
-          <article class="Reviews">
-            <img src="https://picsum.photos/320/240" alt="Random Image" />
-            <p>
-              This is a wider card with supporting text below as a natural lead-in to
-              additional conent. This conent is a little bit longer.
-            </p>
-            <footer>
-              <button class="viewButton">View</button>
-              <button class="editButton">Edit</button>
-              <span class="span"> 9 min </span>
-            </footer>
-          </article>
-          <article class="Purchase">
-            <img src="https://picsum.photos/320/240" alt="Random Image" />
-            <p>
-              This is a wider card with supporting text below as a natural lead-in to
-              additional conent. This conent is a little bit longer.
-            </p>
-            <footer>
-              <button class="viewButton">View</button>
-              <button class="editButton">Edit</button>
-              <span class="span"> 9 min </span>
-            </footer>
-          </article>
+          <img src="images/driver.jpg" alt="Random Image" />
+          <p>
+            Welcome! If your here for the first time press Sign-up to access the form. For those who are returning. Welcome back!
+          </p>
+          <footer>
+            <button class="viewButton">View</button>
+            <button class="editButton">Edit</button>
+          </footer>
+        </article>
+        <article class="Reviews">
+          <img src="images/fivestar.jpg" alt="Review" />
+          <p>
+            This is a wider card with supporting text below as a natural lead-in
+            to additional conent. This conent is a little bit longer.
+          </p>
+          <footer>
+            <button class="viewButton">View</button>
+            <button class="editButton">Edit</button>
+          </footer>
+        </article>
+        <article class="Purchase">
+          <img src="images/carsale.jpg" alt="car sale" />
+          <p>
+            This is a wider card with supporting text below as a natural lead-in
+            to additional conent. This conent is a little bit longer.
+          </p>
+          <footer>
+            <button class="viewButton">View</button>
+            <button class="editButton">Edit</button>
+          </footer>
+        </article>
+      </div>
     </main>
   </body>
   <footer>
@@ -94,4 +124,20 @@
       @ 2020 Autos4Me - Bryan Calle
     </p>
   </footer>
+  <script>
+    window.onscroll = function() {
+      myFunction();
+    };
+
+    var header = document.getElementById("Header");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
 </html>

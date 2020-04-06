@@ -31,6 +31,7 @@ header h1 {
 header h2 {
   color: #686868;
   font-family: Oxaxium;
+  font-variant: small-caps;
 }
 
 .Membership {
@@ -52,9 +53,6 @@ header h2 {
   margin-bottom: 15px;
   border: 2px solid white;
 }
-a.iLinks:hover {
-  color: red;
-}
 nav {
   background-color: black;
 }
@@ -75,7 +73,9 @@ nav ul li a {
   padding: 2rem;
   align-items: center;
 }
-
+a.nav ul li a:hover {
+  color: #a80000;
+}
 main img {
   max-width: 100%;
   max-height: auto;
@@ -94,7 +94,7 @@ main img {
   grid-row: 2;
   padding: 20px;
   text-align: center;
-  font-family: Titillum Web;
+  font-family: Titillium Web;
   font-style: oblique;
   font-variant: small-caps;
   font-size: 2.6rem;
@@ -118,7 +118,8 @@ main img {
 .Answer p {
   grid-column: 3/5;
   grid-row: 1/3;
-  font-family: Titillum Web;
+  font-variant: small-caps;
+  font-family: Titillium Web;
   font-size: 2rem;
   color: black;
   text-align: left;
@@ -132,6 +133,16 @@ main img {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 20px;
+}
+.Options h2 {
+  grid-column: 1/4;
+  grid-row: 1;
+  margin: auto;
+  font-size: 900%;
+  font-style: italic;
+  color: white;
+  font-family: Oxaxium;
+  font-variant: small-caps;
 }
 .Options img {
   grid-column: 1/4;
@@ -188,6 +199,6 @@ main img {
   width: 25px;
   height: auto;
 }
-.social p {
+p {
   color: #686868;
 }

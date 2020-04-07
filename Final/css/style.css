@@ -27,8 +27,10 @@ header h1 {
   text-align: center;
   font-family: Oxaxium;
   font-variant: small-caps;
+  margin: auto;
 }
-header h2 {
+.Motto {
+  display: block;
   color: #686868;
   font-family: Oxaxium;
   font-variant: small-caps;

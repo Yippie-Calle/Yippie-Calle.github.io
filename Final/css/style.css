@@ -3,7 +3,7 @@ nav,
 main,
 footer {
   max-width: 100%;
-  margin: 0 auto;
+  margin:auto;
   background-color: black;
 }
 header {
@@ -58,7 +58,20 @@ header h1 {
 nav {
   background-color: black;
 }
-
+nav li {
+  
+  flex: auto;
+  margin: auto;
+  text-align: center;
+  font-family: Titillium Web;
+  font-style: oblique;
+  font-weight: bold;
+  color: whitesmoke;
+  font-size: 3rem;
+}
+a.nav:hover {
+  color: #a80000;
+}
 nav ul {
   display: flex;
   flex-direction: row;
@@ -75,9 +88,7 @@ nav ul li a {
   padding: 2rem;
   align-items: center;
 }
-a.nav ul li a:hover {
-  color: #a80000;
-}
+
 main img {
   max-width: 100%;
   max-height: auto;
@@ -195,12 +206,17 @@ main img {
 .social {
   float: right;
   background-color: black;
-  color: #686868;
+  color: #6d6c6c;
+  justify-content: center;
+  align-items: center;
 }
 .social img {
   width: 25px;
   height: auto;
+
 }
 p {
-  color: #686868;
+  color: #999999;
+  padding: 20px;
+  margin: auto;
 }

@@ -3,7 +3,7 @@ nav,
 main,
 footer {
   max-width: 100%;
-  margin:auto;
+  margin: auto;
   background-color: black;
 }
 header {
@@ -38,7 +38,6 @@ header h1 {
 
 .Membership {
   display: flex;
-  flex-direction: column;
   justify-items: right;
 }
 .signup {
@@ -59,7 +58,6 @@ nav {
   background-color: black;
 }
 nav li {
-  
   flex: auto;
   margin: auto;
   text-align: center;
@@ -213,10 +211,95 @@ main img {
 .social img {
   width: 25px;
   height: auto;
-
 }
 p {
   color: #999999;
   padding: 20px;
   margin: auto;
+}
+/*More stuff added to About Page*/
+.Question form {
+  margin: 0.8rem;
+  border: 1px solid #999999;
+  padding: 0.5rem;
+  background-color: rgb(10, 10, 10, 1);
+  font-family: Titillium Web;
+  font-size: 1.5rem;
+  margin-top: auto;
+}
+form {
+  grid-column: 2/3;
+  grid-row: 2/4;
+  color: #999999;
+}
+input,
+textarea,
+select {
+  margin: auto;
+  padding: 0.5rem;
+  background-color: rgb(10, 10, 10, 0.5);
+  color: #999999;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #000000;
+  font-size: 16px;
+  resize: none;
+}
+input #firstName {
+  background-color: rgb(10, 10, 10, 0.5);
+}
+.Question button {
+  padding: 0.3rem;
+  background-color: rgb(10, 10, 10, 0.5);
+  color: #999999;
+}
+
+/*More stuff for review page*/
+img.coupe {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  border-radius: 50%;
+  margin: 100px;
+  width: 70%;
+}
+img.pickup {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  border-radius: 45%;
+  margin: 100px;
+  width: 70%;
+}
+img.sedan {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  border-radius: 45%;
+  margin: 100px;
+  width: 70%;
+}
+img.minivan {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  border-radius: 40%;
+  margin: 100px;
+  width: 70%;
+}
+img.sports {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  border-radius: 40%;
+  margin: 100px;
+  width: 70%;
+}
+img.suv {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  border-radius: 30%;
+  margin: 100px;
+  width: 70%;
 }

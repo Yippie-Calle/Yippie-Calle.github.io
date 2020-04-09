@@ -3,14 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" conent="Homepage" />
+    <meta name="description" content="aboutME" />
     <meta name="author" content="Bryan Calle" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Auto4Me</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
 <body>
-    
+    <header id="Header">
+        <picture>
+          <img class="Logo" src="images/logo.jpg" alt="Auto4Me logo" />
+        </picture>
+        <div class="Title" id="Autos4Me">
+          <h1 href="index.html">Auto4Me.com</h1>      
+          <div class="Motto" id="Motto">
+          Together we can find your next car.
+        </div>
+        </div>
+        <div class="Membership" id="rememberMe">
+          <button class="signup">Sign-Up</button>
+          <button class="login">Log-in</button>
+        </div>
+      </header>
+      <nav class="iLinks">
+        <ul>
+          <li>
+            <a href="Reviews.html">Reviews</a>
+          </li>
+          <li>
+            <a href="#">About Me</a>
+          </li>
+          <li>
+            <a href="#">Buy a Car</a>
+          </li>
+        </ul>
+      </nav>
+      <main> 
+        <div class="Question">
+            <img src="images/Journey.jpg" alt="parking Lot" class="Traffic" />
+            <h2>
+              Your journey begins now. Are you ready?
+            </h2>
+
+            <form>            
+            <p style="color: red;">New Users: Fill out Form and Submit. We will reach out to you as soon as we have our resuts.
+              <br>
+              Returning Users: Press here to go to your Profile, to review or update your page.
+            </p>
+              <label for="fname">First name:</label>
+              <input type="text" id="firstName" name="fname" placeholder="First Name"><br>
+              <label for="lname">Last name:</label>
+              <input type="text" id="lastName" name="lname" placeholder="Last Name"> <br>
+              <p>Please select your gender:</p>
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Female</label>
+              <input type="radio" id="other" name="gender" value="other">
+              <br>
+              <p>Please select your age:</p>
+              <input type="radio" id="age1" name="age" value="20">
+              <label for="age1">16-20</label>
+              <input type="radio" id="age2" name="age" value="30">
+              <label for="age2">20-30</label>
+              <input type="radio" id="age3" name="age" value="40">
+              <label for="age3">30-40</label>
+              <input type="radio" id="age4" name="age" value="60">
+              <label for="age3">50-60</label>
+              <input type="radio" id="age5" name="age" value="70">
+              <label for="age3">70+</label>
+               <p>Is this your first car purchase?</p>
+              <br>
+              <input type="radio" id="fcary" name="fcary" value="yes">
+              <label for="age1">Yes</label>
+              <input type="radio" id="fcarn" name="fcarn" value="no">
+              <label for="age2">No</label>
+              <p>What will be the use of this car?<br>
+                <span style="font-size: .8rem;"> (down the Ctrl (windows) or Command (Mac) button to select multiple options.)</span></p>
+                <label for="reasons">Reason for new Car</label>
+                <select id="cars" name="cars" >
+                  <option value="" disabled selected>Choose from this list</option>
+                  <option value="dDriver">Daily Driver</option>
+                  <option value="wCar">Work Car</option>
+                  <option value="sEvents">Special Events</option>
+                  <option value="fCar">Family Car</option>
+                  <option value="mySelf">Personal</option>
+                  <option value="other">Other</option>
+                </select>
+              <p>Please type up any other information that you think would help us </p>
+              <textarea placeholder="Any other information"></textarea>
+              <button type="submit" >What Car should I get?</button>
+            </form>
+          </div>
+      </main>
 </body>
 <footer>
     <div class="social">
@@ -30,7 +115,7 @@
     <p>
       @ 2020 Autos4Me - Bryan Calle 
     </p>
-  </footer>
+</footer>
   <script>
     window.onscroll = function() {
       myFunction();
@@ -47,5 +132,4 @@
       }
     }
   </script>
-</html>
 </html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Reviews" />
+    <meta name="author" content="Bryan Calle" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Auto4Me</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header id="Header">
+      <picture>
+        <img class="Logo" src="images/logo.jpg" alt="Auto4Me logo" />
+      </picture>
+      <div class="Title" id="Autos4Me">
+        <h1 href="index.html">Auto4Me.com</h1>
+        <div class="Motto" id="Motto">
+          Together we can find your next car.
+        </div>
+      </div>
+      <div class="Membership" id="rememberMe">
+        <button class="signup">Sign-Up</button>
+        <button class="login">Log-in</button>
+      </div>
+    </header>
+    <nav class="iLinks">
+      <ul>
+        <li>
+          <a href="Reviews.html">About Me</a>
+        </li>
+        <li>
+          <a href="#">Reviews</a>
+        </li>
+        <li>
+          <a href="#">Buy a Car</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+        <div class="Question">
+            <img src="images/intersection.jpg" alt="parking Lot" class="Traffic" />
+            <h2>
+              What body type do you want to learn more about?
+            </h2>
+            <img  src="images/coupe.jpg" alt="mini coupe"class="coupe"/>
+            <img  src="images/pickup.jpg" alt="F-150"class="pickup"/>
+            <img  src="images/sedan.jpg" alt="Camry"class="sedan"/>
+            <img  src="images/minivan.jpg" alt="Oddesy"class="minivan"/>
+            <img  src="images/sports.jpg" alt="Camaro"class="sports"/>
+            <img  src="images/suv.jpg" alt="Ateca"class="suv"/>
+
+        </div>
+    </main>
+  </body>
+  <footer>
+    <div class="social">
+      <a href="https://www.facebook.com/">
+        <img src="images/facebook.png" alt="Facebook logo" />
+      </a>
+      <a href="https://www.instagram.com/">
+        <img src="images/instagram.png" alt="Instagram logo" />
+      </a>
+      <a href="https://twitter.com">
+        <img src="images/twitter.png" alt="Twitter logo" />
+      </a>
+      <a href="https://www.youtube.com">
+        <img src="images/youtube.png" alt="Youtube logo" />
+      </a>
+    </div>
+    <p>
+      @ 2020 Autos4Me - Bryan Calle
+    </p>
+  </footer>
+  <script>
+    window.onscroll = function () {
+      myFunction();
+    };
+
+    var header = document.getElementById("Header");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+</html>
